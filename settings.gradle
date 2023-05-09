@@ -1,2 +1,68 @@
 rootProject.name = 'AutomationMobile'
 
+dependencyResolutionManagement {
+
+    repositories {
+
+        mavenCentral()
+        mavenLocal()
+
+        maven {
+            url "https://plugins.gradle.org/m2"
+        }
+
+        maven {
+            url "https://mvnrepository.com/"
+        }
+
+    }
+
+    versionCatalogs {
+        libs {
+
+            library 'serenity-core','net.serenity-bdd','serenity-core' version "$serenityVersion"
+            library 'serenity-junit','net.serenity-bdd','serenity-junit' version "$serenityVersion"
+            library 'serenity-cucumber','net.serenity-bdd','serenity-cucumber' version "$serenityVersion"
+            library 'serenity-screenplay','net.serenity-bdd','serenity-screenplay' version "$serenityVersion"
+            library 'serenity-screenplay-rest','net.serenity-bdd','serenity-screenplay-rest' version "$serenityVersion"
+            library 'serenity-ensure','net.serenity-bdd','serenity-ensure' version "$serenityVersion"
+            library 'serenity-spring','net.serenity-bdd','serenity-spring' version "$serenityVersion"
+            library 'serenity-junit5','net.serenity-bdd','serenity-junit5' version "$serenityVersion"
+
+            library 'assertj','org.assertj','assertj-core' version "$assertjVersion"
+
+            library 'slf4j-api','org.slf4j','slf4j-api' version "$slf4j"
+            library 'slf4j-simple','org.slf4j','slf4j-simple' version "$slf4j"
+
+            library 'hamcrest','org.hamcrest','hamcrest-all' version "$hamcrestVersion"
+            library 'lombok','org.projectlombok','lombok' version "$lombokVersion"
+
+            library 'junit-core','junit','junit' version "$junitCoreVersion"
+            library 'junit-vintage','org.junit.vintage','junit-vintage-engine' version "$junitVintageVersion"
+            library 'junit-jupiter','org.junit.jupiter','junit-jupiter' version "$junitJupiterVersion"
+
+            library 'apache-maven','org.apache.maven.plugins','maven-surefire-plugin' version "$apacheMavenVersion"
+            library 'apache-commons','org.apache.commons','commons-collections4' version "$apacheCommonsVersion"
+            library 'google-oauth','com.google.oauth-client','google-oauth-client' version "$googleOauthVersion"
+            library 'google-jetty','com.google.oauth-client','google-oauth-client-jetty' version "$googleJettyVersion"
+            library 'google-api','com.google.apis','google-api-services-sheets' version "$googleApiVersion"
+
+            library 'dotenv','io.github.cdimascio','dotenv-java' version "$dovEnvVersion"
+            library 'awaitility','org.awaitility','awaitility' version "$awaitilityVersion"
+
+            library 'faker','com.github.javafaker','javafaker' version "$fakerVersion"
+
+            library 'appiumClient','io.appium','java-client' version "$appiumClientVersion"
+
+            // Bundles
+            bundle 'slf4j', ['slf4j-api','slf4j-simple']
+            bundle 'apache', ['apache-maven','apache-commons']
+            bundle 'google', ['google-oauth','google-jetty','google-api']
+            bundle 'junit', ['junit-core','junit-vintage','junit-jupiter']
+            bundle 'test', ['assertj','hamcrest','awaitility']
+            bundle 'serenity', ['serenity-core', 'serenity-junit', 'serenity-cucumber','serenity-screenplay','serenity-screenplay-rest','serenity-ensure','serenity-spring','serenity-junit5']
+        }
+    }
+}
+
+

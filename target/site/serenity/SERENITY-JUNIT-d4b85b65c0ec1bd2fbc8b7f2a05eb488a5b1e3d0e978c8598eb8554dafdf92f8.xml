@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="1" failures="0" name="Loguearme en la aplicacion" skipped="0" tests="1" time="0.06" timestamp="2023-05-09 10:32:18"><testcase name="login user"><error message="WebDriver was unable to create a new instance of type class io.appium.java_client.AppiumDriver&#13;&#10;WebDriver reported the following message: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.conduitreactnative.qa' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.conduitreactnative.SplashActivity' or 'com.conduitreactnative.qa.com.conduitreactnative.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting &#10;Host info: host: 'DESKTOP-IH6LPG7', ip: '172.22.224.1'&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Command: [null, newSession {capabilities=[{appium:app=D:\Documents\Automation engineer\Prueba\Workspace\AutomationMobile/src/test/resources/app/app-qa-release.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:deviceName=AutomationTesting, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:newCommandTimeout=1000, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11.0, appium:udid=emulator-5554, appium:waitForAppScript=true}], desiredCapabilities=Capabilities {app: D:\Documents\Automation eng..., autoAcceptAlerts: true, automationName: UiAutomator2, deviceName: AutomationTesting, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, newCommandTimeout: 1000, noReset: false, platformName: ANDROID, platformVersion: 11.0, udid: emulator-5554, waitForAppScript: true}}]&#10;Capabilities {}&#13;&#10;See below for more details." type="net.thucydides.core.webdriver.DriverConfigurationError">WebDriver was unable to create a new instance of type class io.appium.java_client.AppiumDriver&#13;
+WebDriver reported the following message: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.conduitreactnative.qa' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.conduitreactnative.SplashActivity' or 'com.conduitreactnative.qa.com.conduitreactnative.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'DESKTOP-IH6LPG7', ip: '172.22.224.1'
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\Documents\Automation engineer\Prueba\Workspace\AutomationMobile/src/test/resources/app/app-qa-release.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:deviceName=AutomationTesting, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:newCommandTimeout=1000, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11.0, appium:udid=emulator-5554, appium:waitForAppScript=true}], desiredCapabilities=Capabilities {app: D:\Documents\Automation eng..., autoAcceptAlerts: true, automationName: UiAutomator2, deviceName: AutomationTesting, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, newCommandTimeout: 1000, noReset: false, platformName: ANDROID, platformVersion: 11.0, udid: emulator-5554, waitForAppScript: true}}]
+Capabilities {}&#13;
+See below for more details.</error><system-err>WebDriver was unable to create a new instance of type class io.appium.java_client.AppiumDriver&#13;
+WebDriver reported the following message: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.conduitreactnative.qa' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.conduitreactnative.SplashActivity' or 'com.conduitreactnative.qa.com.conduitreactnative.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting 
+Host info: host: 'DESKTOP-IH6LPG7', ip: '172.22.224.1'
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=D:\Documents\Automation engineer\Prueba\Workspace\AutomationMobile/src/test/resources/app/app-qa-release.apk, appium:autoAcceptAlerts=true, appium:automationName=UiAutomator2, appium:deviceName=AutomationTesting, appium:fullReset=false, appium:hub=http://127.0.0.1:4723/wd/hub, appium:newCommandTimeout=1000, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11.0, appium:udid=emulator-5554, appium:waitForAppScript=true}], desiredCapabilities=Capabilities {app: D:\Documents\Automation eng..., autoAcceptAlerts: true, automationName: UiAutomator2, deviceName: AutomationTesting, fullReset: false, hub: http://127.0.0.1:4723/wd/hub, newCommandTimeout: 1000, noReset: false, platformName: ANDROID, platformVersion: 11.0, udid: emulator-5554, waitForAppScript: true}}]
+Capabilities {}&#13;
+See below for more details.&#13;
+stepdefinitions.LoginSD.setUp(LoginSD.java:18)&#13;
+io.cucumber.java.Invoker.doInvoke(Invoker.java:66)&#13;
+io.cucumber.java.Invoker.invoke(Invoker.java:24)&#13;
+io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)&#13;
+io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)&#13;
+io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)&#13;
+io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)&#13;
+io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)&#13;
+io.cucumber.core.runner.TestStep.run(TestStep.java:57)&#13;
+io.cucumber.core.runner.TestCase.run(TestCase.java:78)&#13;
+io.cucumber.core.runner.Runner.runPickle(Runner.java:75)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)&#13;
+io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)&#13;
+io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)&#13;
+io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)&#13;
+io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)&#13;
+io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:59)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>

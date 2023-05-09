@@ -15,14 +15,14 @@ public class LoginSD {
     @Before
     public void setUp(){
         OnStage.setTheStage(new OnlineCast());
-          OnStage.theActorCalled("Prueba");
+        OnStage.theActorCalled("Prueba");
     }
 
         @Given("^el usuario puede ingresar el username '(.*)'$")
         public void elUsuarioPuedeIngresarElUsername(String user){
+            System.out.println("llega aqui?S");
             OnStage.theActorInTheSpotlight().attemptsTo(Salir.salir(),
                 UserTask.login(user));
-
         }
 
     @When("el usuario puede ingresar el password '(.*)'")

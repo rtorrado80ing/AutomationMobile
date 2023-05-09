@@ -11,7 +11,7 @@ public class LoginUI {
     public static Target BotonTags = Target.the("Boton Tags")
             .located(By.id("tags-button"));
     public static Target BotonSalir = Target.the("Bonton Salir")
-            .locatedBy("//android.widget.Button[@content-desc=\"Login, tab, 2 of 2\"]");
+            .locatedBy("//android.widget.Button[@content-desc='Login, tab, 2 of 2']");
     public static final Target UsuarioLogin = Target.the("Ingresar el Usuario de logueo")
             .locatedBy("//*[contains(text(),'dominio.com')]");
 
