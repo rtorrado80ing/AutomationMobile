@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">AutomationMobile</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="cee80064ea8c979baef426213c031b6d5eb5baf9d8955a4deb8ccc2f6e5ba3be.html">Loguearme En La Aplicacion</a></span>
+                > <span class="truncate-60"><a
+                    href="d4b85b65c0ec1bd2fbc8b7f2a05eb488a5b1e3d0e978c8598eb8554dafdf92f8.html">login user </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-05-2023 21:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Loguearme En La Aplicacion </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario podre loguearme en la aplicacion
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="cb712f80b07cefaeec9b7658bc143f57d1e8fd37070e7c3f1f1be2935a686962.html">Login Ok
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">login user
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="b3410688d25ce6977f9536f503b06d708352097e58b9cd605343cf6a48c5ec02.png" title=" Prueba salir" width="1080"/>
+                <img src="3eeae71e978abbf19c44f424ac4cc690ea3c42c936fe7804ae3bf747dbc1789b.png" title=" Prueba clicks on Bonton Salir" width="1080"/>
+                <img src="4ccfd851a118541374825949e9145ab8e80cd13b263a540754998d6eac787535.png" title=" Prueba clicks on Bonton Salir (completed)" width="1080"/>
+                <img src="4ccfd851a118541374825949e9145ab8e80cd13b263a540754998d6eac787535.png" title=" Prueba salir (completed)" width="1080"/>
+                <img src="affd815d5d13622b066e45501274bdc2156ffde468980106718e02c62c75cb18.png" title=" Given el usuario puede ingresar el username 'prueba@accenture.com'" width="1080"/>
+                <img src="affd815d5d13622b066e45501274bdc2156ffde468980106718e02c62c75cb18.png" title=" Prueba user task" width="1080"/>
+                <img src="68cde01a5d94d4fba892fcfc91896d1989e46492720de76b4c35979a5ee657f0.png" title=" Prueba clicks on Ingresar el pass de logueo" width="1080"/>
+                <img src="62392ff49d99a21d1c6d6dfac1f83cc00f2db7541c498ee8be43c93123a0a39c.png" title=" Prueba clicks on Ingresar el pass de logueo (completed)" width="1080"/>
+                <img src="62392ff49d99a21d1c6d6dfac1f83cc00f2db7541c498ee8be43c93123a0a39c.png" title=" Prueba user task (completed)" width="1080"/>
+                <img src="62392ff49d99a21d1c6d6dfac1f83cc00f2db7541c498ee8be43c93123a0a39c.png" title=" Given el usuario puede ingresar el username 'prueba@accenture.com' (completed)" width="1080"/>
+                <img src="40613d59925f294be5ba84efec6942e538042b82518c46d3ccedd775d96f4b0e.png" title=" When el usuario puede ingresar el password '123456'" width="1080"/>
+                <img src="40613d59925f294be5ba84efec6942e538042b82518c46d3ccedd775d96f4b0e.png" title=" Prueba pass task" width="1080"/>
+                <img src="1bebd4463133de9794f9600a54fbdda5c5907766b9c919d0b51343c78749c269.png" title=" Prueba pass task (completed)" width="1080"/>
+                <img src="1bebd4463133de9794f9600a54fbdda5c5907766b9c919d0b51343c78749c269.png" title=" When el usuario puede ingresar el password '123456' (completed)" width="1080"/>
+                <img src="83b151d413fc1fe170fadd5ed9f07115d62e7364653ff03a6f81e47eca7458c6.png" title=" Then el usuario se loguea exitosamente" width="1080"/>
+                <img src="83b151d413fc1fe170fadd5ed9f07115d62e7364653ff03a6f81e47eca7458c6.png" title=" Then boton usuario visible should be (true)" width="1080"/>
+                <img src="0309ed2a00f1b44f3ed856e55772a4f3a78f8c67d6765fc9c0eb76cafa668b3e.png" title=" Then boton usuario visible should be (true) (completed)" width="1080"/>
+                <img src="0309ed2a00f1b44f3ed856e55772a4f3a78f8c67d6765fc9c0eb76cafa668b3e.png" title=" Then el usuario se loguea exitosamente (completed)" width="1080"/>
+                <img src="7b360d8cf978ee15bedc324d6b359c76c7f06c1b693e1d8e2bdbdc9fde74cb3a.png" title=" Prueba salir" width="1080"/>
+                <img src="5aa880fcfd864c45793f8ab6eda9b3dc20b3325121c0fcd1e0da9bd9806a5b53.png" title=" Prueba clicks on Bonton Salir" width="1080"/>
+                <img src="c1e407a1da4d46d559aa5fa021b7fbe8baff6703e266acd6436540cc4cf59862.png" title=" Prueba clicks on Bonton Salir (completed)" width="1080"/>
+                <img src="c1e407a1da4d46d559aa5fa021b7fbe8baff6703e266acd6436540cc4cf59862.png" title=" Prueba salir (completed)" width="1080"/>
+                <img src="3b3ae54ed1ecae97ec34f7925224524df8a9af8793cdbef854405c91f8f477be.png" title=" Given el usuario puede ingresar el username 'prueba@accenture.com'" width="1080"/>
+                <img src="3b3ae54ed1ecae97ec34f7925224524df8a9af8793cdbef854405c91f8f477be.png" title=" Prueba user task" width="1080"/>
+                <img src="1dd9710dea876340a2768adfa87fe0fa7cf6b74b9e188e78a6f6ab98347a06ca.png" title=" Prueba clicks on Ingresar el pass de logueo" width="1080"/>
+                <img src="f853df3470ae49e0c8aed3a407aa70f29bcd6fbe35a6f499442e2ab5642e3bce.png" title=" Prueba clicks on Ingresar el pass de logueo (completed)" width="1080"/>
+                <img src="f853df3470ae49e0c8aed3a407aa70f29bcd6fbe35a6f499442e2ab5642e3bce.png" title=" Prueba user task (completed)" width="1080"/>
+                <img src="f853df3470ae49e0c8aed3a407aa70f29bcd6fbe35a6f499442e2ab5642e3bce.png" title=" Given el usuario puede ingresar el username 'prueba@accenture.com' (completed)" width="1080"/>
+                <img src="26d47ae62f66d96863543e1f598ffb788c4aaa43346f2c16bcbe7fad0651299e.png" title=" When el usuario puede ingresar el password '123457'" width="1080"/>
+                <img src="26d47ae62f66d96863543e1f598ffb788c4aaa43346f2c16bcbe7fad0651299e.png" title=" Prueba pass task" width="1080"/>
+                <img src="e6288090671143df52dee1c05edcabd9bc9e7f4f636a4bbef8d892b65574b447.png" title=" Prueba pass task (completed)" width="1080"/>
+                <img src="e6288090671143df52dee1c05edcabd9bc9e7f4f636a4bbef8d892b65574b447.png" title=" When el usuario puede ingresar el password '123457' (completed)" width="1080"/>
+                <img src="72578e5714daa701e92fa131c9d446efab83b78ccfb4c82ea0e9e1cbb44c335c.png" title=" Then el usuario No se loguea exitosamente" width="1080"/>
+                <img src="72578e5714daa701e92fa131c9d446efab83b78ccfb4c82ea0e9e1cbb44c335c.png" title=" Then logueo no exitoso should be (true)" width="1080"/>
+                <img src="72578e5714daa701e92fa131c9d446efab83b78ccfb4c82ea0e9e1cbb44c335c.png" title=" Then el usuario No se loguea exitosamente (completed): <span class='success-color'>SUCCESS</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.5.1</span>
+</div>
+</body>
+</html>

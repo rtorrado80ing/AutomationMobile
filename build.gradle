@@ -37,7 +37,7 @@ dependencies {
     implementation libs.dotenv
     implementation libs.bundles.slf4j
     implementation libs.faker
-    implementation libs.appiumClient
+    implementation libs.bundles.appium
 
 }
 

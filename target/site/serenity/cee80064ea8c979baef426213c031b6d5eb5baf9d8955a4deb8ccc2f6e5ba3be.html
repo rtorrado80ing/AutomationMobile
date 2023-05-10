@@ -144,7 +144,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Loguearme en la aplicacion","type":"feature","href":"cee80064ea8c979baef426213c031b6d5eb5baf9d8955a4deb8ccc2f6e5ba3be.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-exclamation-triangle-fill error-icon \u0027 title\u003d\u0027ERROR\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Loguearme en la aplicacion","type":"feature","href":"cee80064ea8c979baef426213c031b6d5eb5baf9d8955a4deb8ccc2f6e5ba3be.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027bi bi-check-circle-fill success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -215,7 +215,7 @@
             <a href="#"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-05-2023 10:32</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 09-05-2023 21:28</span>
     <br style="clear:left"/>
 </div>
 
@@ -298,7 +298,7 @@
                                                                                         <a style="margin-left:0.5em;padding-right: 1.5em;"
                                                                                            href="d4b85b65c0ec1bd2fbc8b7f2a05eb488a5b1e3d0e978c8598eb8554dafdf92f8.html"
                                                                                            title="View test results">
-                                                                                            <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                                                            <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                                             </a>
 
 
@@ -321,13 +321,13 @@
                                             <div class="col-sm-12">
                                                     <h3>Scenarios</h3>
 
-                                                        <a name="672dced1-d517-497d-8175-35046010b603"></a>
+                                                        <a name="e239b519-d301-4cad-8dcf-1421773736f0"></a>
                                                         <p class="rule-tags inline-tag">
                                                         </p>
 
 
                                                             <div class="scenario-docs card" id="691243c560778f3592a0a909fdce197861e16769be3e45b5d6bed7424854dfcf">
-                                                                <div class="scenario-docs card-header error" style="min-height:1.5em;">
+                                                                <div class="scenario-docs card-header success" style="min-height:1.5em;">
                                                                     <div>
                                                                         <span class="scenario-heading">
                                                                             <a href="d4b85b65c0ec1bd2fbc8b7f2a05eb488a5b1e3d0e978c8598eb8554dafdf92f8.html"
@@ -335,20 +335,29 @@
                                                                         </span>
 
                                                                         <span class="example-tags inline-tag">
+                                                                                <span class="badge tag-badge" style="background:default;">
+                                                                                    <i class="bi bi-tag-fill"></i>&nbsp;
+                                                                                    <a class="tagLink" style="background:default;" href="4f1da57b76e3d9920425477fdcb569ffbd9a7a5ab5dec877630e06a61d8901bf.html">loginFail (tag)</a>
+                                                                                </span>
                                                                         </span>
 
                                                                         <span class="scenario-result-icon">
                                                                     
 
-                                                                                <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a>
+                                                                                <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a>
                                                                         </span>
                                                                     </div>
 
                                                                 </div>
                                                                 <div class="scenario-docs card-body">
+                                                                        <p>Prueba salir</p>
                                                                         <p>Given el usuario puede ingresar el username 'prueba@accenture.com'</p>
                                                                         <p>When el usuario puede ingresar el password '123456'</p>
                                                                         <p>Then el usuario se loguea exitosamente</p>
+                                                                        <p>Prueba salir</p>
+                                                                        <p>Given el usuario puede ingresar el username 'prueba@accenture.com'</p>
+                                                                        <p>When el usuario puede ingresar el password '123457'</p>
+                                                                        <p>Then el usuario No se loguea exitosamente</p>
                                                                     <div class="examples">
                                                                     </div>
                                                                 </div>
@@ -403,16 +412,16 @@
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr class="scenario-result ERROR">
+                                                            <tr class="scenario-result SUCCESS">
                                                                 <td>
                                                                         <a href="d4b85b65c0ec1bd2fbc8b7f2a05eb488a5b1e3d0e978c8598eb8554dafdf92f8.html">login user</a>
                                                                 </td>
-                                                                <td>3</td>
-                                                                <td>10:32:18</td>
-                                                                <td>056ms</td>
+                                                                <td>8</td>
+                                                                <td>21:28:32</td>
+                                                                <td>59s 332ms</td>
                                                                 <td>
-                                                                        <a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon ' title='ERROR'></i></a> <span
-                                                                            style="display:none">ERROR</span>
+                                                                        <a href='##beforetable'><i class='bi bi-check-circle-fill success-icon ' title='SUCCESS'></i></a> <span
+                                                                            style="display:none">SUCCESS</span>
                                                                                                                                     </td>
                                                             </tr>
                                                         </tbody>
@@ -430,6 +439,22 @@
                                             </div>
                                         </div>
 
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Tags</h3>
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                    <a href="cb712f80b07cefaeec9b7658bc143f57d1e8fd37070e7c3f1f1be2935a686962.html">
+                                    <span class="tag-badge badge" style="background-color:#b0cf73; margin:1em;padding:4px;">
+                                        <i class="bi bi-tag-fill"></i> Login Ok&nbsp;&nbsp;&nbsp;1
+                                    </span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
                                     </div>
                                 </div>
                             </div>
@@ -470,7 +495,7 @@
             datasets: [{
                 label: 'Test Results',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 1}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 1}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -521,7 +546,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -565,7 +590,7 @@
             datasets: [{
                 label: 'Feature Coverage',
                 fill: false,
-                data: [{meta: 'Passing tests', value: 0}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 1}, {meta: 'Compromised tests', value: 0}],
+                data: [{meta: 'Passing tests', value: 1}, {meta: 'Pending tests', value: 0}, {meta: 'Ignored tests', value: 0}, {meta: 'Skipped tests', value: 0}, {meta: 'Aborted tests', value: 0}, {meta: 'Failing tests', value: 0}, {meta: 'Broken tests', value: 0}, {meta: 'Compromised tests', value: 0}],
                 backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                 borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                 borderWidth: 1,
@@ -616,7 +641,7 @@
                         ctx.font = fontSize + "em sans-serif";
                         ctx.textBaseline = "middle";
 
-                        var text = " "
+                        var text = "100%"
                         textX = 10 + Math.round((width - ctx.measureText(text).width) / 2);
                         textY = (height / 2) - 40;
 
@@ -661,7 +686,7 @@
             datasets: [
                 {
                     label: 'Automated',
-                    data: [0,0,0,0,0,0,1,0],
+                    data: [1,0,0,0,0,0,0,0],
                     backgroundColor: ['rgba(153,204,51,0.5)','rgba(165, 199, 238, 0.5)','rgba(168, 168, 168, 0.5)','rgba(238, 224, 152, 0.75)','rgba(255, 153, 102, 0.5)','rgba(255, 22, 49, 0.5)','rgba(255, 97, 8, 0.5)','rgba(255, 104, 255, 0.5)','rgba(83, 50, 168, 0.5)'],
                     borderColor: ['rgba(153,204,51,1)','rgba(165, 199, 238, 1)','rgba(168, 168, 168, 1)','rgba(238, 224, 152, 1)','rgba(255, 153, 102, 1)','rgba(255, 22, 49, 1)','rgba(255, 97, 8, 1)','rgba(255, 104, 255, 1)','rgba(83, 50, 168, 1)'],
                     borderWidth: 1
@@ -744,7 +769,7 @@
             datasets: [{
                 label: 'Number of tests per duration',
                 fill: false,
-                data: ['1','0','0','0','0','0','0','0'],
+                data: ['0','0','0','1','0','0','0','0'],
                 backgroundColor: 'rgba(83, 146, 255,0.5)',
                 borderColor: 'rgba(83, 146, 255, 1)',
             }]

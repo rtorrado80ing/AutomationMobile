@@ -3,8 +3,10 @@ package tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static userinterface.LoginUI.PassLogin;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
+import static userinterface.LoginUI.*;
 
 public class PassTask implements Task {
 
@@ -19,6 +21,8 @@ public class PassTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        actor.attemptsTo(WaitUntil.the(PassLogin,isCurrentlyEnabled()).forNoMoreThan(120).seconds());
         PassLogin.resolveFor(actor).sendKeys(pass);
+        BotonLogin.resolveFor(actor).click();
     }
 }

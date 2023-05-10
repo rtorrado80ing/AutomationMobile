@@ -3,12 +3,12 @@ package tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isCurrentlyEnabled;
-import static userinterface.LoginUI.BotonSalir;
-import static userinterface.LoginUI.UsuarioLogin;
+import static userinterface.LoginUI.*;
+
 
 public class UserTask implements Task {
 
@@ -25,6 +25,7 @@ public class UserTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(WaitUntil.the(UsuarioLogin,isCurrentlyEnabled()).forNoMoreThan(120).seconds());
             UsuarioLogin.resolveFor(actor).sendKeys(user);
+        actor.attemptsTo(Click.on(PassLogin));
 
     }
 }

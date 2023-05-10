@@ -28,6 +28,7 @@ dependencyResolutionManagement {
             library 'serenity-ensure','net.serenity-bdd','serenity-ensure' version "$serenityVersion"
             library 'serenity-spring','net.serenity-bdd','serenity-spring' version "$serenityVersion"
             library 'serenity-junit5','net.serenity-bdd','serenity-junit5' version "$serenityVersion"
+            library 'serenity-webdriver','net.serenity-bdd','serenity-screenplay-webdriver' version "$serenityVersion"
 
             library 'assertj','org.assertj','assertj-core' version "$assertjVersion"
 
@@ -59,8 +60,9 @@ dependencyResolutionManagement {
             bundle 'apache', ['apache-maven','apache-commons']
             bundle 'google', ['google-oauth','google-jetty','google-api']
             bundle 'junit', ['junit-core','junit-vintage','junit-jupiter']
+            bundle 'appium', ['appiumClient']
             bundle 'test', ['assertj','hamcrest','awaitility']
-            bundle 'serenity', ['serenity-core', 'serenity-junit', 'serenity-cucumber','serenity-screenplay','serenity-screenplay-rest','serenity-ensure','serenity-spring','serenity-junit5']
+            bundle 'serenity', ['serenity-core', 'serenity-junit', 'serenity-cucumber','serenity-screenplay','serenity-screenplay-rest','serenity-ensure','serenity-spring','serenity-junit5','serenity-webdriver']
         }
     }
 }
